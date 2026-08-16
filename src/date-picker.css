@@ -1,0 +1,12 @@
+.app-date-field { position: relative; }
+.date-picker-trigger { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 11px; border: 1px solid #cedfdd; border-radius: 9px; background: #fff; color: #183431; text-align: left; }
+.app-date-picker { position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; width: min(330px, 100%); padding: 12px; border: 1px solid #c8dcda; border-radius: 12px; background: #fff; box-shadow: 0 14px 36px #102f2b2b; }
+.app-date-picker header { display: grid; grid-template-columns: 34px 1fr 34px; align-items: center; gap: 6px; margin-bottom: 9px; }
+.app-date-picker header b { text-align: center; text-transform: capitalize; }
+.app-date-picker header button { height: 32px; border: 1px solid #d7e5e3; border-radius: 8px; background: #f7fbfa; color: #0d706a; font-size: 21px; }
+.date-picker-weekdays, .date-picker-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.date-picker-weekdays span { padding: 5px 0; color: #607775; text-align: center; font-size: 10px; }
+.date-picker-days button { aspect-ratio: 1; border: 0; border-radius: 8px; background: transparent; color: #294946; font-size: 12px; }
+.date-picker-days button:hover { background: #e8f4f2; }
+.date-picker-days button.muted { color: #a9b8b6; }
+.date-picker-days button.selected { background: #0d827b; color: #fff; font-weight: 850; }

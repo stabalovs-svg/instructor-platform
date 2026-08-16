@@ -1,0 +1,29 @@
+.brand {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  color: transparent;
+  font-size: 0;
+}
+
+.brand::before {
+  width: 112px;
+  height: 28px;
+  flex: 0 0 auto;
+  background: url('./assets/ikars-logo.svg') center / contain no-repeat;
+  content: '';
+}
+
+.brand span {
+  padding-bottom: 2px;
+  color: #0d827b;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .12em;
+}
+
+@media (max-width: 480px) {
+  .brand { gap: 6px; }
+  .brand::before { width: 96px; height: 24px; }
+  .brand span { font-size: 8px; }
+}

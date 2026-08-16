@@ -1,0 +1,111 @@
+.account-modal {
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 24px 12px;
+}
+
+.account-form {
+  width: min(720px, 100%);
+  margin: auto;
+  padding: 22px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(20, 42, 54, .2);
+}
+
+.account-form .modal-head { margin-bottom: 16px; }
+.account-form .modal-head small { color: #6b7b84; font-weight: 700; letter-spacing: .08em; }
+.account-form .modal-head h2 { margin: 3px 0 0; }
+
+.account-section {
+  display: grid;
+  gap: 12px;
+  padding: 18px 0;
+  border-top: 1px solid #e5ecef;
+}
+
+.account-section h3 { margin: 0; color: #173d4b; }
+.account-section form { display: grid; gap: 12px; }
+.account-section label { display: grid; gap: 6px; color: #52646d; font-size: .88rem; font-weight: 700; }
+.account-section input,
+.account-section select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #ccd9de;
+  border-radius: 10px;
+  background: #fff;
+  color: #173d4b;
+  font: inherit;
+}
+
+.account-section .primary { justify-self: end; }
+.save-notice{position:fixed;z-index:3000;top:14px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 24px);padding:11px 16px;border:1px solid #79b7a2;border-radius:12px;background:#eaf8f1;color:#185b44;box-shadow:0 8px 28px rgba(25,69,57,.2);font-size:.9rem;font-weight:800;text-align:center}
+.backup-reminder{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:9px;width:min(1180px,calc(100% - 28px));margin:10px auto 0;padding:8px 10px;border:1px solid #dfcf9c;border-radius:10px;background:#fffaf0;color:#5f563e}.backup-reminder>span{color:#9b7b20}.backup-reminder p{margin:0;font-size:.76rem}.backup-reminder button{padding:6px 8px;border:1px solid #d9c98f;border-radius:7px;background:#fff;color:#6c5b29;font-size:.7rem;font-weight:750}.backup-reminder .backup-download{border-color:#9fc8bd;background:#eef8f5;color:#176c5b}
+.backup-section{grid-template-columns:minmax(180px,1fr) auto auto;align-items:end;padding:14px;border:1px solid #d8e5e2;border-radius:14px;background:#f7fbfa}.backup-section.due{border-color:#e0c57a;background:#fff9e9}.backup-section h3{margin:0 0 5px}.backup-section p{margin:0 0 5px;color:#755e24;font-size:.84rem}.backup-section small{color:#6b7b78}.backup-section .primary{justify-self:end}.backup-range{display:grid;grid-template-columns:1fr 1fr;gap:7px}.backup-range label{display:grid;gap:4px;color:#52646d;font-size:.75rem;font-weight:700}.backup-range input{min-height:38px;padding:7px;border:1px solid #ccd9de;border-radius:8px;background:#fff;color:#173d4b}
+.account-items { display: grid; gap: 8px; }
+.account-items button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 13px;
+  border: 1px solid #d8e4e7;
+  border-radius: 12px;
+  background: #f7fafb;
+  color: #173d4b;
+  text-align: left;
+}
+.account-items button span { display: grid; gap: 3px; }
+.account-items button small { color: #71828a; }
+.account-items button em { color: #147d7b; font-size: .82rem; font-style: normal; font-weight: 800; }
+.profile-options{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:13px}.profile-options fieldset{display:flex;align-content:flex-start;flex-wrap:wrap;gap:6px;margin:0;padding:10px;border:1px solid #dce7e5;border-radius:10px}.profile-options legend{padding:0 5px;color:#52646d;font-size:.78rem;font-weight:800}.profile-options .day-toggle{min-width:auto;padding:7px 9px}.profile-options .day-toggle input{width:15px!important;height:15px!important}@media(max-width:700px){.profile-options{grid-template-columns:1fr}}
+.meeting-point-items article{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;border:1px solid #dce7e5;border-radius:10px;background:#fff;overflow:hidden}.meeting-point-items .meeting-point-main{border:0;border-radius:0}.meeting-point-items article>div{display:flex;gap:5px;padding:6px}.meeting-point-items .point-public,.meeting-point-items .point-delete{padding:7px 8px;border:1px solid #cbdedb;border-radius:7px;background:#fff;color:#52706b;font-size:9px;font-weight:800}.meeting-point-items .point-public.active{border-color:#0d827b;background:#e7f5f3;color:#0d706a}.meeting-point-items .point-delete{border-color:#ead3cf;color:#9a4b42}@media(max-width:700px){.meeting-point-items article{grid-template-columns:1fr}.meeting-point-items article>div{justify-content:flex-end;border-top:1px solid #e6eeec}}
+.account-message { margin: 12px 0; padding: 10px 12px; border-radius: 10px; background: #eaf8f5; color: #16645f; font-weight: 700; }
+.account-message.error { background: #fff0ee; color: #9d3c33; }
+.account-message-top{position:sticky;z-index:4;top:-10px;margin:0 0 10px;border:1px solid #bfe2dc;box-shadow:0 8px 22px rgba(22,100,95,.14)}.account-message-top::before{content:'✓';display:inline-grid;width:20px;height:20px;margin-right:8px;place-items:center;border-radius:50%;background:#18766e;color:#fff;font-size:12px}.account-message-top.error{border-color:#eccbc7}.account-message-top.error::before{content:'!';background:#a64a41}
+.school-invitations article{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px;border:1px solid #d8e4e7;border-radius:12px;background:#f7fafb}.school-invitations article>div:first-child{display:grid;gap:4px}.school-invitations article span{color:#71828a;font-size:.84rem}.school-invitations article>div:last-child{display:flex;gap:7px}.school-invitations article button{padding:9px 11px;border:1px solid #ccd9de;border-radius:9px;background:#fff;color:#52646d;font-weight:750}.school-invitations article .primary{border:0;background:#0d827b;color:#fff}@media(max-width:600px){.school-invitations article{grid-template-columns:1fr}.school-invitations article>div:last-child{display:grid;grid-template-columns:1fr 1fr}.school-invitations article button{width:100%}}
+.close-account { width: 100%; min-height: 44px; margin-top: 4px; border: 1px solid #cbd9dd; border-radius: 11px; background: #fff; color: #31515d; font-weight: 800; }
+
+.student-picker { position: relative; }
+.student-suggestions {
+  position: absolute;
+  z-index: 8;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  display: grid;
+  overflow: hidden;
+  border: 1px solid #cbdadd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(24, 57, 68, .17);
+}
+.student-suggestions button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 0;
+  border-bottom: 1px solid #e7edef;
+  background: #fff;
+  color: #173d4b;
+  text-align: left;
+}
+.student-suggestions button:last-child { border-bottom: 0; }
+.student-suggestions button:hover { background: #edf8f6; }
+.student-suggestions small { color: #6d7e85; font-weight: 500; }
+
+@media (max-width: 600px) {
+  .account-modal { padding: 0; }
+  .account-form { min-height: 100%; border-radius: 0; padding: 16px; }
+  .account-form .form-grid { grid-template-columns: 1fr; }
+  .account-section .primary { width: 100%; justify-self: stretch; }
+  .backup-section{grid-template-columns:1fr}.backup-range{grid-template-columns:1fr 1fr}.save-notice{top:8px;width:calc(100vw - 20px)}
+  .backup-reminder{grid-template-columns:auto 1fr;width:calc(100% - 20px);gap:6px;margin-top:7px}.backup-reminder p{font-size:.7rem}.backup-reminder button{grid-row:2}.backup-reminder .backup-download{grid-column:1}.backup-reminder button:last-child{grid-column:2}
+}
+.profile-photo-editor{display:flex;align-items:center;gap:16px;margin:0 0 18px;padding:14px;border:1px solid #d7e5e3;border-radius:14px;background:#f8fbfa}.profile-photo-editor>img,.profile-photo-placeholder{width:80px;height:100px;flex:0 0 auto;border-radius:12px;object-fit:cover}.profile-photo-placeholder{display:grid;place-items:center;background:#dceae7;color:#315f5a;font-size:24px;font-weight:900}.profile-photo-editor>div:last-child{min-width:0}.profile-photo-editor b{display:block}.profile-photo-editor p{margin:4px 0 9px;color:#6b817e;font-size:11px;line-height:1.45}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
+.profile-photo-actions{display:flex;flex-wrap:wrap;gap:7px}.photo-delete-action{padding:8px 10px;border:1px solid #e2c8c5;border-radius:9px;background:#fff;color:#a2473e;font-size:11px;font-weight:800}
+
+@media(max-width:560px){.profile-photo-editor{align-items:flex-start}.profile-photo-editor>img,.profile-photo-placeholder{width:64px;height:80px}}

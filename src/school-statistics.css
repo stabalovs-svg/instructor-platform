@@ -1,0 +1,229 @@
+.school-stats {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.school-instructor-results {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #d7e5e3;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.school-instructor-results h2 {
+  margin: 0 0 14px;
+}
+
+.school-results-head,
+.school-instructor-results article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px 120px;
+  gap: 12px;
+  align-items: center;
+  padding: 11px 8px;
+}
+
+.school-results-head {
+  border-bottom: 1px solid #d7e5e3;
+  color: #607775;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.school-instructor-results article + article {
+  border-top: 1px solid #edf2f1;
+}
+
+.school-instructor-results article span {
+  color: #0d706a;
+  font-weight: 850;
+}
+
+.school-statistics-page .analytics-note {
+  margin-top: 18px;
+}
+
+.school-team {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #d7e5e3;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.school-widget-settings{display:grid;gap:16px;margin-top:24px;padding:18px;border:1px solid #d7e5e3;border-radius:15px;background:#fff}.school-widget-settings>label{display:grid;gap:8px;color:#4d6966;font-size:11px;font-weight:800}.setting-options,.theme-options{display:flex;flex-wrap:wrap;gap:7px}.setting-options button,.theme-options button{padding:8px 11px;border:1px solid #cedfdd;border-radius:9px;background:#fff;color:#49625f;font-size:11px;font-weight:800}.setting-options button.active,.theme-options button.active{border-color:#0d827b;box-shadow:0 0 0 2px #0d827b22;color:#0d706a}.theme-swatch{display:flex;align-items:center;gap:7px}.theme-swatch i{display:block;width:18px;height:18px;border-radius:50%;background:#0d827b}.swatch-baltic i{background:#2f67a8}.swatch-sand i{background:#a66d35}.swatch-graphite i{background:#4f5c62}.swatch-custom i{background:linear-gradient(135deg,#ef6a5b,#f0cc52,#4daea4,#496ed0)}.custom-color{max-width:220px}.custom-color input{width:100%;height:42px;padding:3px;border:1px solid #cedfdd;border-radius:9px;background:#fff}.widget-settings-preview{--preview-accent:#0d827b;padding:14px;border:1px solid color-mix(in srgb,var(--preview-accent) 28%,#d7e5e3);border-radius:13px;background:color-mix(in srgb,var(--preview-accent) 7%,#fff)}.preview-baltic{--preview-accent:#2f67a8}.preview-sand{--preview-accent:#a66d35}.preview-graphite{--preview-accent:#4f5c62}.widget-settings-preview>small{color:var(--preview-accent);font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.widget-settings-preview>div{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:10px;align-items:center;margin-top:9px}.preview-photo,.preview-initials{display:grid;width:44px;height:52px;place-items:center;border-radius:9px;background:color-mix(in srgb,var(--preview-accent) 15%,#fff);color:var(--preview-accent);font-size:12px;font-weight:900}.preview-photo{background:linear-gradient(145deg,color-mix(in srgb,var(--preview-accent) 35%,#fff),color-mix(in srgb,var(--preview-accent) 8%,#fff))}.widget-settings-preview p{display:grid;gap:3px;margin:0}.widget-settings-preview em{color:#6b817e;font-size:10px;font-style:normal}.widget-settings-preview button{padding:8px 10px;border:0;border-radius:8px;background:var(--preview-accent);color:#fff;font-size:10px;font-weight:800}.widget-settings-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.widget-settings-actions button{padding:10px 13px;border-radius:9px;font-size:11px;font-weight:800}.widget-settings-actions .secondary{border:1px solid #bdd6d3;background:#f4faf9;color:#0d706a}.save-widget-settings{justify-self:start;transition:background .18s ease,transform .18s ease}.save-widget-settings.saved{background:#247a53;transform:scale(1.015)}
+
+.school-team-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.school-team-head h2 {
+  margin: 0;
+}
+
+.school-team-head > span {
+  display: grid;
+  min-width: 30px;
+  min-height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e5f5ee;
+  color: #0d706a;
+  font-weight: 850;
+}
+
+.school-invite {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: end;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f2f7f6;
+}
+
+.school-invite label {
+  display: grid;
+  gap: 6px;
+  color: #4d6966;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.school-invite input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cedfdd;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.school-management-message {
+  margin: 12px 0 0;
+  color: #0d706a;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.school-team-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.school-team-list > article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #e2ecea;
+  border-radius: 12px;
+}
+
+.school-team-list article > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: center;
+}
+
+.school-team-list article strong {
+  flex-basis: 100%;
+}
+
+.school-team-list article span {
+  color: #607775;
+  font-size: 12px;
+}
+
+.school-team-list article small,
+.school-team-list article em {
+  padding: 4px 7px;
+  border-radius: 7px;
+  background: #edf3f2;
+  color: #49625f;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.school-team-list article .link-active {
+  background: #e5f5ee;
+  color: #13734c;
+}
+
+.school-team-list article .link-invited {
+  background: #fff5d8;
+  color: #765e16;
+}
+
+.school-team-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.school-team-actions button {
+  padding: 7px 9px;
+  border: 1px solid #c8dcda;
+  border-radius: 8px;
+  background: #fff;
+  color: #315552;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.school-team-actions .danger-action {
+  border-color: #e4c9c6;
+  color: #9a3f37;
+}
+
+.school-tabs {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 700px) {
+  .school-tabs,
+  .school-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .school-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .school-results-head,
+  .school-instructor-results article {
+    grid-template-columns: minmax(0, 1fr) 72px 62px;
+    gap: 6px;
+    padding: 10px 2px;
+  }
+
+  .school-instructor-results {
+    padding: 13px;
+  }
+
+  .school-team {
+    padding: 13px;
+  }
+
+  .school-invite,
+  .school-team-list > article {
+    grid-template-columns: 1fr;
+  }
+
+  .school-widget-settings{padding:13px}.widget-settings-preview>div{grid-template-columns:40px minmax(0,1fr)}.widget-settings-preview button{grid-column:1/-1}.photo-setting{display:grid;grid-template-columns:1fr 1fr}.photo-setting button{white-space:normal}
+
+  .school-invite .primary {
+    width: 100%;
+  }
+
+  .school-team-actions {
+    justify-content: flex-start;
+  }
+}

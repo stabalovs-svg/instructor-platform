@@ -1,0 +1,15 @@
+import { createApp } from 'vue'
+import App from './App.vue'
+import './styles.css'
+import './school-statistics.css'
+import './week.css'
+import './auth.css'
+import './account.css'
+import './date-picker.css'
+import './widget.css'
+import './brand.css'
+import './onboarding.css'
+import './platform-admin.css'
+import './student-schedule.css'
+
+createApp(App).mount('#app')
